@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ReadMe.iml" filepath="$PROJECT_DIR$/ReadMe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spritz/spritz.iml" filepath="$PROJECT_DIR$/spritz/spritz.iml" />
+    </modules>
+  </component>
+</project>
+
