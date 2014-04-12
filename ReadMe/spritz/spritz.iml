@@ -70,6 +70,19 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="spritz-util-1.0.2" level="project" />
+    <orderEntry type="library" exported="" name="jackson-annotations-2.2.3" level="project" />
+    <orderEntry type="library" exported="" name="jackson-datatype-joda-2.2.3" level="project" />
+    <orderEntry type="library" exported="" name="api-client-android-1.0.4" level="project" />
+    <orderEntry type="library" exported="" name="jackson-core-2.2.3" level="project" />
+    <orderEntry type="library" exported="" name="api-common-1.0.4" level="project" />
+    <orderEntry type="library" exported="" name="slf4j-api-1.7.5" level="project" />
+    <orderEntry type="library" exported="" name="api-client-1.0.4" level="project" />
+    <orderEntry type="library" exported="" name="spritz-sdk-1.0.2-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="jackson-databind-2.2.3" level="project" />
+    <orderEntry type="library" exported="" name="spritz-engine-common-1.0.9" level="project" />
+    <orderEntry type="library" exported="" name="spritz-display-1.0.2-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="joda-time-2.1" level="project" />
   </component>
 </module>
 
