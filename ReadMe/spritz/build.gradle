@@ -16,7 +16,27 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
+    repositories {
+        mavenCentral()
+        maven {
+            credentials {
+                username "${spritz_nexus_username}"
+                password "${spritz_nexus_password}"
+            }
+            url "https://nexus.spritzinc.com/content/repositories/PartnerSnapshots"
+        }
+        maven {
+            credentials {
+                username "${spritz_nexus_username}"
+                password "${spritz_nexus_password}"
+            }
+            url "https://nexus.spritzinc.com/content/repositories/PartnerReleases"
+        }
+    }
+
 }
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

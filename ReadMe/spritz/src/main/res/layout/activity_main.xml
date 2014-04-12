@@ -1,16 +1,44 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.lahacks.readme.spritz.MainActivity">
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.spritzllc.android.sdk.sample.helloworld.MainActivity"
+    tools:ignore="MergeRootFrame">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <com.spritzllc.android.sdk.view.InlineSpritzer
+        android:id="@+id/isInlineSpritzer"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="5dp" />
 
-</RelativeLayout>
+    <RadioGroup
+        android:id="@+id/rgSpritzStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:checkedButton="@+id/rbInline">
+
+        <RadioButton
+            android:id="@+id/rbInline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inline" />
+
+        <RadioButton
+            android:id="@+id/rbFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment" />
+
+    </RadioGroup>
+
+    <Button android:id="@+id/btnHelloWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YESSIR" />
+
+</LinearLayout>

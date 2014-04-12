@@ -12,5 +12,25 @@ buildscript {
 allprojects {
     repositories {
         mavenCentral()
+        maven {
+            credentials {
+                username "${spritz_nexus_username}"
+                password "${spritz_nexus_password}"
+            }
+            url "https://nexus.spritzinc.com/content/repositories/PartnerSnapshots"
+        }
+        maven {
+            credentials {
+                username "${spritz_nexus_username}"
+                password "${spritz_nexus_password}"
+            }
+            url "https://nexus.spritzinc.com/content/repositories/PartnerReleases"
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
     }
 }
